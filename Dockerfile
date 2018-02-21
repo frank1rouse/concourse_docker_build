@@ -48,9 +48,15 @@ RUN apk update && \
             zip unzip \
             docker-bash-completion \
             bash bash-completion \
-            make py-pip \
+            make \
+            openjdk8 \
+            py-pip \
             curl
+
+# Add a JAVA_HOME definition
+ENV JAVA_HOME=/usr/lib/jvm/default-jvm
 
 # add to the python environment
 RUN pip install github3.py
 RUN pip install chainmap
+
