@@ -1,4 +1,4 @@
-FROM josebarn/dcind
+FROM amidos/dcind
 
 #
 # Add additional build tools that are needed
